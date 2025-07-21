@@ -264,7 +264,6 @@
   border-left: 13px solid #0d111a;
 }
 
-
 .news-cards .cart img {
   max-width: 200px;
   margin-bottom: 25px;
@@ -294,6 +293,82 @@
   color: #ffffff;
 }
 /* news section */
+
+/* famous */
+
+.famous {
+  padding: 0 150px;
+  margin-bottom: 97px;
+}
+
+.famous-h {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 38px;
+}
+
+.famous-h h2 {
+  font-family: Ubuntu;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 32px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+
+.famous-h button {
+  border: none;
+  width: 131px;
+  height: 36px;
+  color: #000000;
+  background-color: #ec8f32;
+  border-radius: 50px;
+}
+
+.famous-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.famous-cards .famous-card img {
+  max-width: 200px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+
+.famous-card div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+
+.famous-card p {
+  font-family: Ubuntu;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #adadad;
+}
+
+.famous-card h3 {
+  font-family: Ubuntu;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 21px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+
+/* famous */
 
 @media (max-width: 420px) {
   .main-bg-img {
