@@ -1,0 +1,164 @@
+// 1() let constni fargi?
+// let va constning fargi letni qayta elonqish mumkin emas ammo qiymatini uzgartissh mumkin lekin constda qayta elon qish ham qiymatni uzgartish ham mumkin emas 
+//Array va Obyrnct malumotlarini letda ham constda ham uzgartishis mumkin constda faqat ichki elementlarini ammo referense uzgarmatdi.
+
+
+//2 var va let ?
+ // var va letning asosiy farqi warni qayta elon qiloish mumkin ammo letda bu isgni qilib bulmaydi
+
+ //3 Data types asosiy necha xil turga bulinadi
+ // Data types asosiy Ikki xil turga bulinadi (Primitiv, N0Primativ(Reference))
+
+ //4 Primitive va No-Primiyive farqi?
+ /// primitiv va no-primitiv ning asosiy farqi ularning hotrada joylashishida 
+ // primitive data types Stack da tugridan tugri saqlandi non-primitive da
+ // Stackda  yuli saqalanda qiymari esa Heapda saqlanadi va shu qiymatga stackda gi name referns buladi
+
+ //5 Accses before initilitaion ?
+ // var, let, const va function ni avval jacaScript hoist qiladi keyin kodni ishlatishni boshlaydi ammo (let va const) TD(Temporal Dead Zone) da bulganligi uchun error qaytaradi varda(undefined) qaytaradi
+
+//6 Type convertion haqida malumot?
+// Type conver tion bu Malum bit data typdan ikknchi sida utqazish masalan stringdan numberga, booleanga ...
+
+ //7 Type convershin haqida malumot?
+ //Type convertion 2xil buladi Javascript Afatmatik(Implicit) amalga shiradi hamdamanual(Explicit) amalga oshitrish mumkin
+ // Aftamatik (1+"1"=11 aftamatik stringga utqixadi)
+ // funcsiyalr orqali Number("12") let a = "32" let x = +aftamatik String(2456) parseInt("124rt)  = 124
+
+ // 8 Automatic type convertion ?
+ // bu turdagi type convertion da JavaSctript bi taypdan ikkinchisga automatic convertionni amalga oshiradi
+let result = "5" + 3;  53 - 3  sonini stringga utqizadi
+let result2 = "5" - 3;  ..
+let result3 = "5" * "2"; ...
+let result4 = true + 1;
+
+//9 Math objecti haqida malumot?
+JavaScriptda Math obyekti matematik hisoblashlarni bajarishda qo'llaniladi va unda turli xil methodlari mavjud
+
+//10
+Truthy and falsy qimatlarni sanab bering?
+falsy qiymatlar(0,-0 null, "", undefined, false) falsy qiymatga kitmaydiganlar Truthy qiymatlardir(true, ({}), ([]), 42, "0", 3.1, 455n)
+
+//11 If else haqida malumot bering?
+if else bu shart operatori hisoblanadi yani birr bir shart barish uchun islatiladi
+agar shart tugri ishlasa if bajariladi aks holda else bajariladi
+
+//12 Switch case haqida malumot?
+switch case ham shart operatori hisoblaanadi yani birosh shart bajarilsa shunga mos qiymat qaytaradi
+let res  = 1
+switch(res){
+    case 1: console.log("Hello")
+    break;
+    case 2: console.log("World")
+    break;
+    default: console.log("Mavjud qimat kiritng")
+    break;
+}
+
+break ning bazifasi agar shu shart bajarilsa tekshiruvni shu joyda tuxtatadi yani keyingi qatorga tushirib yubormaydi
+
+//13 Necha xil asosy funcsiya bor 
+3 xil asosy function for bular(function-declorition, function-exprettion,Arrow function )
+
+//14 Functionlarnig bir biradan farqi ?
+Functionlarnig birbiridan asossiy farqi ularni elon qilishda 
+function-declorition{
+    function get(){
+        retun a
+    }
+    function kalit uzbilan boshlanadu va unga nom beriladi
+}
+
+function-exprettion{
+    let get = function(){
+        retun "a"
+    }
+    bu functionda bitta uzgaruvchi ochiladi hamda unga yangi function tenglashtiriladi
+}
+
+Arrow function{
+    let res = () => {}
+    Array functioda functioda kalit suzi ishlatilmaydi  bu funksiya () => {}
+    kurinishida buladi
+}
+
+
+//15 function returin ishlashi?
+functioda returin ishlatish da biror bir qiymat oject berib yuborsak buladi agar qiymat 
+berib yuborilmas undefined chiqadi hamda return dan keyin yozilgann koglar ishlatilmaydi
+
+//16
+IIFE haqida malumot bering?
+bu funksiya dastur ishga tushishin bilan chaqirilmasa ham ishga tushdadi 
+(function test(){
+    console.log("sdfsd")
+})();
+
+//17 Method nima
+ bu obyekt ichidagi funksiya.
+ Obyectg ategishli hamda Obyect ichida ishlatilmaydi
+
+ //18 String split haqida malumot bering?
+ split bajaradigan ish sytingdagi qiymatni array kurinishiga utqax=zadi shu i qaytaradi
+
+ //19 Loop nima ?
+ Loop bu takrorlaninsh aperatori yani malum tekshirishlarni shart vajarilmaguncha takrorlaydi
+
+ //20 Loop turlari?
+ for, while, do while
+
+ //21 do while va  while farqi ?
+ ikkalasing urtasidagi asosy farq bu do vile berilgan shar bajarilisgidan jarayon bajariladi 
+ while da esa avvla shart tekshiriladi keyin jarayon bajariladi
+
+ //22 for in va for of farqi
+ for in obyekting kalitlarini takrorlaydi  arrauy bilan ham ishlaydi array ning indexni qaytaradi
+ for of iterable (array, string, Map, Set, va h.k.) elementlarini takrorlaydi. obyeky ishlatilmaydi
+
+ //23 Assigmeny opetionlarni sanb bering 
+ bular += -= *= /= 
+ yani let a = 4 
+ a+=4; a = a+4
+
+ // 24 == === farqi 
+ ikita tenglikkelgan qiymatlarni solushtiradi 3taligi esa qiymatni solishtirishdan oldn typeni solishtiradi
+
+ //25 ! operatori haqid atushincha
+ bu NOT operatori 
+ true ni false ga false ni true ga aylantiradi 
+
+ //26 Array method concat 
+ bu method 1 arrayga ikkinchi arrayni tuliqligicha qushis uchun ishlatiladi 
+ let a = [1,3,4,5,6,7]
+  let b = [12,45,67,89]
+  let s = b.concat(a)
+  console.log(s);
+
+  //27 Array method reverse?
+  array malumotlarini teskari tartiblab joylashtiradi 
+  yani [12, 45, 67, 2, 6]= [6,2,12, 45, 67]
+  
+  //28Array method splice ?
+  bu massive elementlarini ocirish quwiw yoki alamshtirish uchun iwlatiladi 
+  splice orqali massivni aniq joyida uzgarishlar qilish mumkin 
+  ushbu method massivni uzgartiradi va yandi massiv qaytaradi
+
+
+29// Array foreach ?
+bu massiv yoki itereble obektdagi har bir elementga funcsiyani qullash uchun ishlatiladigan method, u qiymat qaytarmaydi balki amal bajaradi, Massivdagi yoki obuektni oqish va elemntlarni ustida harakat bajaradi
+
+//30 Array map
+yandi Array return qiladi yani Array dagi malumotlar ustida amal bajarib yangi Array return qiladi
+
+//32 Array some methodi haqida malumot 
+boolean return qiladi ichida shart bajaradi hamda birortasi tugri kelsa true qaytarmaydi
+
+//33 Array every methodi
+bu method ichida shart bajaradi agar element lardan 1tasi false bulsa false qayrtaradi
+
+//34 Array find 
+mu mehod shartga tugri kelgan arraydagi 1 chi elemntni qaytaradi
+
+
+//35 Array reduce 
+bu method Array ichidagi element larni yigindisiniqaytaradi 
