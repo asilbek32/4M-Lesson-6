@@ -404,6 +404,47 @@
 }
 /* all-pragrfh */
 
+/* selections */
+.selections {
+  padding: 0 150px;
+  margin-bottom: 159px;
+}
+
+.selections h2 {
+  margin-bottom: 41px;
+}
+
+.selections-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.selections-cards div {
+  position: relative;
+}
+.selections-cards div h3 {
+  font-family: Ubuntu;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 60px;
+  letter-spacing: 0%;
+  position: absolute;
+  left: 30px;
+  top: 89px;
+  color: #ffffff;
+}
+.selections-cards div img {
+  width: 273px;
+  height: 163px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+/* selections */
+
 @media (max-width: 420px) {
   .main-bg-img {
     background-size: 500%;
