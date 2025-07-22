@@ -7,7 +7,7 @@
 }
 
 .container {
-  background: #000;
+  background: linear-gradient(black, rgb(2, 31, 2), black);
 }
 
 .main-bg-img {
@@ -175,6 +175,50 @@
 
 /* HERO */
 
+/* carts book naem */
+.book-auther {
+  font-family: Ubuntu;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #adadad;
+}
+
+.book-name {
+  font-family: Ubuntu;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 21px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+
+.see-more {
+  border: none;
+  width: 131px;
+  height: 36px;
+  color: #000000;
+  background-color: #ec8f32;
+  border-radius: 50px;
+}
+
+.section-paragrph {
+  font-family: Ubuntu;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 32px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+/* carts book naem */
+
 /* news section */
 .news {
   padding: 0 150px;
@@ -210,26 +254,6 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 38px;
-}
-
-.news-h h2 {
-  font-family: Ubuntu;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 32px;
-  leading-trim: NONE;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #ffffff;
-}
-
-.news-h button {
-  border: none;
-  width: 131px;
-  height: 36px;
-  color: #000000;
-  background-color: #ec8f32;
-  border-radius: 50px;
 }
 
 .news-cards {
@@ -271,27 +295,9 @@
 }
 
 .news-cards .cart p {
-  font-family: Ubuntu;
-  font-weight: 300;
-  font-style: Light;
-  font-size: 16px;
-  leading-trim: NONE;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #adadad;
   margin-bottom: 9px;
 }
 
-.news-cards .cart h3 {
-  font-family: Ubuntu;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 21px;
-  leading-trim: NONE;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #ffffff;
-}
 /* news section */
 
 /* famous */
@@ -305,26 +311,6 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 38px;
-}
-
-.famous-h h2 {
-  font-family: Ubuntu;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 32px;
-  leading-trim: NONE;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #ffffff;
-}
-
-.famous-h button {
-  border: none;
-  width: 131px;
-  height: 36px;
-  color: #000000;
-  background-color: #ec8f32;
-  border-radius: 50px;
 }
 
 .famous-cards {
@@ -345,30 +331,35 @@
   margin-bottom: 13px;
 }
 
-
-.famous-card p {
-  font-family: Ubuntu;
-  font-weight: 300;
-  font-style: Light;
-  font-size: 16px;
-  leading-trim: NONE;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #adadad;
-}
-
-.famous-card h3 {
-  font-family: Ubuntu;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 21px;
-  leading-trim: NONE;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #ffffff;
-}
-
 /* famous */
+
+/* choices */
+.choices {
+  padding: 0 150px;
+  margin-bottom: 96px;
+}
+.choice-h {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 41px;
+}
+
+.choices-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.choices-cards .choices-card img {
+  max-width: 200px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+
+.choices-cards .choices-card p {
+  margin-bottom: 13px;
+}
+/* choices */
 
 @media (max-width: 420px) {
   .main-bg-img {
