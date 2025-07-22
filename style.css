@@ -7,7 +7,13 @@
 }
 
 .container {
-  background: linear-gradient(black, rgb(2, 31, 2), black);
+  background: #000000;
+  background: linear-gradient(
+    276deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(5, 20, 5) 75%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 .main-bg-img {
@@ -291,7 +297,7 @@
 .news-cards .cart img {
   max-width: 200px;
   margin-bottom: 25px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .news-cards .cart p {
@@ -322,7 +328,7 @@
 .famous-cards .famous-card img {
   max-width: 200px;
   margin-bottom: 25px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .famous-card div {
@@ -353,13 +359,50 @@
 .choices-cards .choices-card img {
   max-width: 200px;
   margin-bottom: 25px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .choices-cards .choices-card p {
   margin-bottom: 13px;
 }
 /* choices */
+
+/* all-pragrfh */
+.all-pragrfh {
+  padding: 0 150px;
+  margin-bottom: 120px;
+}
+
+.all-p {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 41px;
+}
+
+.all-p h2 {
+  color: #ec8f32;
+  text-decoration: underline;
+}
+.all-p h2:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+.all-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 11fr;
+  column-gap: 50px;
+  row-gap: 60px;
+}
+
+.all-cards .card img {
+  max-width: 200px;
+  margin-bottom: 25px;
+  border-radius: 20px;
+}
+.all-cards .card p {
+  margin-bottom: 13px;
+}
+/* all-pragrfh */
 
 @media (max-width: 420px) {
   .main-bg-img {
